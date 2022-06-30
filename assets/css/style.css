@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: 60px 100px auto auto 20px;
+    gap: 5px;
+    grid-template-areas: "navbar  navbar navbar navbar"
+                         "header  header header header"
+                         "main    main   main   main"
+                         "sidebar sidebar sidebar sidebar"
+                         "footer  footer footer footer ";
+}
+
+
+.navbar{
+
+    grid-area: navbar;
+    background-color: rgba(231, 101, 231, 0.788);
+    display: flex;
+    align-content:space-between;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+
+.menu li{
+    text-decoration: none;
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.logo img{
+    width: 60px;
+    margin-left:  5%; 
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(218, 205, 226);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center
+    
+}
+
+.header h1{
+    margin: 475px ;
+    color: rgb(79, 6, 97);
+    animation-name: aparecer;
+    animation-duration: 3s;    ;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity 1;
+    }
+}
+
+.main{
+    grid-area: main;
+    background-image: url(../img/imagenfondo.jpg);
+    background-size: cover;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.sub{
+    margin: 100px;
+    text-align: center;
+    color:rgb(39, 22, 68);
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.sidebar{
+    grid-area: sidebar;
+    
+}
+
+.containerCajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: inherit;
+    background-color: rgba(231, 101, 231, 0.788);
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.caja{
+    width: 600px;
+    margin: 10px;
+    padding: 5px;
+    color: rgb(39, 22, 68);
+    font-size: 30px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.caja img{
+    width: 300px;
+    padding: 0;
+    
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(218, 205, 226);
+}
+
+.servicios{
+    background-image: url(../img/imagenfondo.jpg);
+    background-size: cover;
+}
+
+
+.ser1{
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ser2{
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ser3{
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pnos{
+    background-image:url(../img/pnos.jpg);
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contactos{
+    height: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.icono img{
+    width: 32px;
+    margin-left: 5px;
+
+}
+
+@media(max-width:768px){
+    container{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: 60px 100px auto auto 20px;
+        grid-template-areas: "navbar  navbar navbar navbar"
+                             "header  header header header"
+                             "main    main   main   main"
+                             "footer  footer footer footer";
+    }
+
+    .menu li{
+        padding: 10px;
+        font-size: 18px;
+    } 
+    
+    .navbar{
+        width: 75%;
+        font-size: 18px;
+    }
+    .header{
+        width: 75%;
+    }
+    .main{
+        width: 75%;
+        font: size 40px; ;
+    }
+    .sidebar{
+        width: 75%;
+    }
+    .footer{
+        width: 75%;
+    }
+
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
