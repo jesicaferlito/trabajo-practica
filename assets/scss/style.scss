@@ -1,0 +1,44 @@
+@import "variable";
+@import "reset";
+@import "container";
+@import "navbar";
+@import "header";
+@import "main";
+@import "sidebar";
+@import "footer";
+@import "containerCajas";
+@import "servicios";
+
+ 
+.sub{
+    margin: 100px;
+    text-align: center;
+    color:rgb(39, 22, 68);
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pnos{
+    background-image:url(../img/pnos.jpg);
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contactos{
+    height: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.icono img{
+    width: 32px;
+    margin-left: 5px;
+
+}
+
+.btn{
+    color: rgb(75, 21, 126);
+    border-radius: 5px;
+}

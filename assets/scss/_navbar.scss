@@ -1,0 +1,28 @@
+.navbar{
+
+    grid-area: navbar;
+    background-color: rgba(231, 101, 231, 0.788);
+    display: flex;
+    align-content:space-between;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    logo img{
+        width: 60px;
+        margin-left:  5%; 
+    }
+    menu{
+        list-style: none;
+        display: flex;
+        li{
+            text-decoration: none;
+            color: beige;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            font-size: 24px;
+        }
+    }
+
+
+}

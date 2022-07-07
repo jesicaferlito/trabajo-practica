@@ -1,0 +1,24 @@
+.header{
+    background-color: $colorPrimario ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    h1{
+        margin: 475px;
+        color: rgb(79, 6, 97);
+        animation-name: aparecer;
+        animation-duration: 3s;    ;
+        font-size: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
